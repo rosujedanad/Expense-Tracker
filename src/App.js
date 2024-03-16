@@ -1,9 +1,9 @@
 import React from 'react'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Expense Tracker!</h1>
+    <div className="container-fluid">
+      <h1 className="text-center">Expense Tracker</h1>
     </div>
   )
 }
