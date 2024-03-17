@@ -8,7 +8,21 @@ const Login = () => {
     };
     return(
         <>
-
+<div className="register-page">
+            <Form layout="vertical" onFinish={submitHandler}>
+                <h1>login form</h1>
+                <Form.Item label="Email" name="email">
+                    <Input type="email"/>
+                </Form.Item>
+                <Form.Item label="Password" name="password">
+                    <Input type="password"/>
+                </Form.Item>
+                <div className="d-flex justify-content-between">
+                    <Link to="/register">not a user? click here to login</Link>
+                    <button className="btn btn-primary">Login</button>
+                </div>
+            </Form>
+        </div>
         </>
     )
 }
